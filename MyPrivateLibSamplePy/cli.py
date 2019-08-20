@@ -3,14 +3,14 @@
 """Console script for MyPrivateLibSamplePy."""
 import sys
 import click
+import MyPrivateLibSamplePy
 
 
 @click.command()
 def main(args=None):
     """Console script for MyPrivateLibSamplePy."""
-    click.echo("Replace this message by putting your code into "
-               "MyPrivateLibSamplePy.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+    text = MyPrivateLibSamplePy.message()
+    click.echo(text)
     return 0
 
 
